@@ -2,6 +2,10 @@ package modulego
 
 import "fmt"
 
+func SayHello() string {
+	return "Hello"
+}
+
 //function sebagai parameter
 type Censored func(string) string
 
