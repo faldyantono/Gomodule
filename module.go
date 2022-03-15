@@ -9,7 +9,7 @@ func SayHelloCensored(name string, censored Censored) {
 	nameCensored := censored(name)
 	fmt.Println("Selamat Datang", nameCensored, "--Portal Resmi SAMSAT Kota Depok--")
 }
-func FilterSensor(name string string) string {
+func FilterSensor(names string) string {
 	if name == "babi" {
 		return "*a*i"
 	} else if name == "anjing" {
