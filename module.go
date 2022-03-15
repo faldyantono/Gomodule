@@ -2,10 +2,6 @@ package modulego
 
 import "fmt"
 
-func SayHello() string {
-	return "Hello"
-}
-
 //function sebagai parameter
 type Censored func(string) string
 
@@ -13,7 +9,7 @@ func SayHelloCensored(name string, censored Censored) {
 	nameCensored := censored(name)
 	fmt.Println("Selamat Datang", nameCensored, "--Portal Resmi SAMSAT Kota Depok--")
 }
-func FilterSensor(name string) string {
+func FilterSensor(name string string) string {
 	if name == "babi" {
 		return "*a*i"
 	} else if name == "anjing" {
