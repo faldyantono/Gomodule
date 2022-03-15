@@ -1,4 +1,4 @@
-package main
+package modulego
 
 func SayHello() string {
 	return "Hello"
